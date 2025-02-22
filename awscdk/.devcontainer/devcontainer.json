@@ -1,0 +1,21 @@
+{
+  "name": "My Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "aws-cdk",
+  "workspaceFolder": "/home/dev/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "amazonwebservices.aws-toolkit-vscode",
+        "devadvice.serverlessconsole",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "java.format.settings.profile": "GoogleStyle",
+        "java.inlayHints.parameterNames.enabled": "none"
+      }
+    }
+  },
+  "remoteUser": "dev"
+}

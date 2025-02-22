@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  aws-cdk:
+    build:
+      context: ./docker/app
+      args:
+        - USER_NAME=${USERNAME}
+        - USER_GROUP_NAME=${USERNAME}
+    tty: true
+    volumes:
+      - ../:/home/${USERNAME}/workspace:cache
+    ports:
+      - 8080:8080
