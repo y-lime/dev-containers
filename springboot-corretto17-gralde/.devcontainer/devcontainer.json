@@ -1,0 +1,22 @@
+{
+  "name": "My Dev Container",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "spring-boot-app",
+  "workspaceFolder": "/home/dev/workspace",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-spring-initializr",
+        "vscjava.vscode-gradle",
+        "esbenp.prettier-vscode"
+      ],
+      "settings": {
+        "java.format.settings.profile": "GoogleStyle",
+        "java.inlayHints.parameterNames.enabled": "none"
+      }
+    }
+  },
+  "remoteUser": "dev"
+}
